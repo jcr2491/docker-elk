@@ -1,0 +1,7 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths: json
+   - /home/elastic/git/docker-elk/json_input/*.json
+output.logstash:
+  hosts: ["localhost:5000"]
